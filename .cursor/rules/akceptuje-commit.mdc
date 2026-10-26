@@ -1,0 +1,17 @@
+---
+description: Commit i push na GitHub po słowie Akceptuję
+alwaysApply: true
+---
+
+# Akceptuję
+
+Gdy użytkownik napisze „Akceptuję” (także jako jedyne słowo wiadomości), utwórz commit z bieżących zmian i wyślij go na GitHub.
+
+- Najpierw sprawdź status, diff i ostatnie komunikaty commitów.
+- Tytuł commita ma być po polsku, w jednej linijce, i podsumowywać wprowadzone zmiany oraz ich sens. Nie wymieniaj listy plików.
+- Nie commituj sekretów (`.env`, haseł, kluczy). Plik bazy `data/baza.xlsx` i kopie zapasowe pomijaj, jeśli są w `.gitignore`.
+- Nie zmieniaj konfiguracji gita, nie pomijaj hooków i nie rób force push.
+- Po udanym commicie wykonaj `git push`.
+- Jeśli nie ma nic do commita, napisz to i nie twórz pustego commita.
+- Jeśli push się nie uda, zostaw commit lokalnie i podaj powód.
+- W odpowiedzi podaj tytuł commita i adres, jeśli push się powiódł.

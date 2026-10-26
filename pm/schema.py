@@ -1,0 +1,81 @@
+"""Nazwy kolumn i arkuszy bazy Excel."""
+
+SHEET_TRANSACTIONS = "Transakcje"
+SHEET_CATEGORIES = "Kategorie"
+SHEET_KEYWORDS = "Słowa kluczowe"
+SHEET_ACCOUNTS = "Konta"
+
+COL_ID = "ID"
+COL_FILE = "Plik"
+COL_UPLOADED = "Data wgrania"
+COL_BANK = "Bank"
+COL_DATE = "Data Transakcji"
+COL_TITLE = "Tytuł"
+COL_RECIPIENT = "Odbiorca"
+COL_DEBIT = "Obciążenia"
+COL_CREDIT = "Uznania"
+COL_CURRENCY = "Waluta"
+COL_NOTE = "Opis"
+COL_CATEGORY = "Kategoria"
+COL_SUBCATEGORY = "Podkategoria"
+COL_SOURCE = "Źródło kategorii"
+
+COL_KEYWORD = "Słowo kluczowe"
+COL_AMOUNT_TYPE = "Typ kwoty"
+COL_AMOUNT_MIN = "Kwota min"
+COL_AMOUNT_MAX = "Kwota max"
+
+COL_ACCOUNT_NAME = "Nazwa"
+COL_ACCOUNT_NUMBER = "Numer konta"
+
+TX_COLUMNS = [
+    COL_ID,
+    COL_FILE,
+    COL_UPLOADED,
+    COL_BANK,
+    COL_DATE,
+    COL_TITLE,
+    COL_RECIPIENT,
+    COL_DEBIT,
+    COL_CREDIT,
+    COL_CURRENCY,
+    COL_NOTE,
+    COL_CATEGORY,
+    COL_SUBCATEGORY,
+    COL_SOURCE,
+]
+
+CATEGORY_COLUMNS = [COL_CATEGORY, COL_NOTE]
+KEYWORD_COLUMNS = [
+    COL_ID,
+    COL_CATEGORY,
+    COL_SUBCATEGORY,
+    COL_KEYWORD,
+    COL_AMOUNT_TYPE,
+    COL_AMOUNT_MIN,
+    COL_AMOUNT_MAX,
+]
+ACCOUNT_COLUMNS = [COL_ACCOUNT_NAME, COL_ACCOUNT_NUMBER]
+
+INTERNAL_CATEGORY = "Wewnętrzne"
+SOURCE_AUTO = "auto"
+SOURCE_MANUAL = "ręczna"
+
+AMOUNT_DEBIT = "obciążenie"
+AMOUNT_CREDIT = "uznanie"
+AMOUNT_ANY = "dowolny"
+AMOUNT_TYPES = [AMOUNT_DEBIT, AMOUNT_CREDIT, AMOUNT_ANY]
+
+STATUS_ASSIGNED = "przypisana"
+STATUS_CONFLICT = "konflikt"
+STATUS_NONE = "brak"
+
+TARGET_FIELDS = [
+    COL_DATE,
+    COL_TITLE,
+    COL_RECIPIENT,
+    COL_DEBIT,
+    COL_CREDIT,
+    COL_CURRENCY,
+]
+SIGNED_AMOUNT_FIELD = "Kwota"
